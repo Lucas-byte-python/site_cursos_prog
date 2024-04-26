@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a:hover {
+    color: rgb(29, 187, 174);
+}
+
+body {
+    background-color: aliceblue;  
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    height: 80px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+nav .left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav .left .logo img {
+    width: 48px;
+    height: auto;
+    object-fit: cover; /* A propriedade object-fit do CSS é usada para especificar como uma <img> ou <video> deve ser redimensionada para se ajustar ao seu contêiner. */
+}
+
+nav .left .links {
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+nav .buttons {
+    display: flex;
+    gap: 14px;
+}
+
+nav .buttons a {
+    background-color: aliceblue;
+    padding: 10px;
+    color: rgb(39, 94, 197);
+    border-radius: 50%;
+    font-size: 18px;
+}
+
