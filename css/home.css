@@ -198,3 +198,57 @@ header .pesquisar button {
     object-fit: cover;
     border-radius: 8px;
 }
+
+.content .courses .item .top .info a,
+.content .podcasts .item .top .info a{
+    display: block;
+    font-size: 15px;
+    font-weight: 900;
+    margin-bottom: 8px;
+    line-height: 1.4rem;
+}
+
+.content .courses .item .top .info p,
+.content .podcasts .item .top .info p{
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.content .courses .item .bottom,
+.content .podcasts .item .bottom,
+.content .articles .item .bottom{
+    border-bottom: none;
+    justify-content: space-between;    
+    border-top: 1px dashed #888;
+}
+
+.content .courses .item .bottom .price p{
+    color: #888;
+    font-size: 13px;
+    text-decoration: line-through;
+}
+
+.content .courses .item .bottom h5.tag,
+.content .courses .item .bottom .discount > h5,
+.content .podcasts .item .bottom h5,
+.content .articles .item .bottom h5{
+    font-weight: 500;
+    background-color: #fff2b2;
+    color: #db7c26;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 13px;
+}
+
+.content .courses .item .bottom h5.tag span,
+.content .courses .item .bottom .discount > h5 span,
+.content .podcasts .item .bottom h5 span,
+.content .articles .item .bottom h5 span{
+    font-weight: bold;
+}
+
+.content .courses .item .bottom .discount{
+    display: flex;
+    gap: 10px;
+}
