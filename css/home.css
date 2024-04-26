@@ -1,67 +1,66 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-a {
+a{
     text-decoration: none;
-    color: black;
+    color: #000;
     transition: all 0.3s ease;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-a:hover {
-    color: rgb(29, 187, 174);
+a:hover{
+    color: #4361ee;
 }
 
-body {
-    background-color: aliceblue;  
+body{
+    background-color: #f8f8f8;
 }
 
-nav {
+nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 80px;
     height: 80px;
-    background-color: white;
+    background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
-nav .left {
+nav .left{
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-nav .left .logo img {
+nav .left .logo img{
     width: 48px;
-    height: auto;
-    object-fit: cover; /* A propriedade object-fit do CSS é usada para especificar como uma <img> ou <video> deve ser redimensionada para se ajustar ao seu contêiner. */
+    height: 48px;
+    object-fit: cover;
 }
 
-nav .left .links {
+nav .left .links{
     display: flex;
     gap: 20px;
     font-size: 15px;
     font-weight: bold;
 }
 
-nav .buttons {
+nav .buttons{
     display: flex;
     gap: 14px;
 }
 
-nav .buttons a {
-    background-color: aliceblue;
+nav .buttons a{
+    background-color: #eaf4f4;
     padding: 10px;
-    color: rgb(39, 94, 197);
+    color: #2d6a4f;
     border-radius: 50%;
     font-size: 18px;
 }
 
-header {
+header{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,33 +70,31 @@ header {
     gap: 26px;
     background-color: #fff;
     opacity: 0.8;
-    background-image: radial-gradient(#2d6a4f 0.75px, transparent 0.75px), radial-gradient(#2d6a4f 0.75px, #ffffff 0.75px);
+    background-image:  radial-gradient(#2d6a4f 0.75px, transparent 0.75px), radial-gradient(#2d6a4f 0.75px, #ffffff 0.75px);
     background-size: 30px 30px;
-    background-position: 0 0, 15px 15px;
+    background-position: 0 0,15px 15px;
 }
 
-header .info h1 {
+header .info h1{
     font-weight: 900;
     background: #fff;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-header .info p {
+header .info p{
     color: #666;
     font-size: 18px;
     margin-top: 14px;
     font-weight: bold;
     background: #fff;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-header .buttons {
+header .buttons{
     display: flex;
     gap: 14px;
     margin-top: 10px;
 }
 
-header .buttons button {
+header .buttons button{
     border: none;
     padding: 8px;
     width: 140px;
@@ -107,18 +104,17 @@ header .buttons button {
     cursor: pointer;
 }
 
-header .buttons button.see-all {
+header .buttons button.see-all{
     background-color: #2d6a4f;
 }
 
-
-header .pesquisar {
+header .search{
     position: relative;
     width: 30%;
     margin-top: 10px;
 }
 
-header .pesquisar input {
+header .search input{
     width: 100%;
     padding: 18px 20px;
     border: none;
@@ -127,13 +123,13 @@ header .pesquisar input {
     outline: none;
 }
 
-header .pesquisar button {
+header .search button{
     position: absolute;
     right: 0;
     padding: 12px;
     font-size: 24px;
     border: none;
-    background-color:transparent;
+    background-color: transparent;
     cursor: pointer;
 }
 
@@ -373,4 +369,113 @@ header .pesquisar button {
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 8px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 100px 30px;
+    background-color: #2d6a4f;
+    color: #fff;
+    border-radius: 40px 40px 0 0;
+}
+
+footer .columns{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .columns .col{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+footer .columns .col.last{
+    flex: 3;
+}
+
+footer .columns .col h5{
+    margin-bottom: 14px;
+    font-size: 16px;
+}
+
+footer .columns .col a{
+    margin-bottom: 4px;
+    color: #ccc;
+    font-size: 14px;
+}
+
+footer .columns .col a:hover{
+    color: #fff;
+}
+
+footer .columns .col.last p{
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+footer .columns .col.last .social-links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .columns .col.last .social-links i{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1200px) {
+    
+    nav{
+        padding: 0 60px;
+    }
+
+    header .search{
+        width: 50%;
+    }
+
+    .content{
+        padding: 100px 60px 0;
+    }
+
+    .content .courses .item .top,
+    .content .courses .item .bottom,
+    .content .articles .item .bottom{
+        flex-direction: column;
+    }
+
+    .content .courses .item .top img{
+        width: 100%;
+        height: 180px;
+    }
+
+    .content .courses .item .bottom .price{
+        text-align: center;
+    }
+
+    .content .courses .item .bottom .discount{
+        justify-content: space-between;
+    }
+
+    .content .courses .item .bottom h5.tag{
+        text-align: center;
+    }
+
+    .content .courses .item .bottom .discount > h5{
+        width: 70%;
+        text-align: center;
+    }
+
+    .content .comments{
+        flex-direction: column;
+    }
+
+    .content .comments > p{
+        width: 100%;
+        font-size: 16px;
+    }
+
 }
