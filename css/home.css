@@ -479,3 +479,57 @@ footer .columns .col.last .social-links i{
     }
 
 }
+
+@media screen and (max-width: 940px) {
+    
+    nav .left .logo{
+        display: none;
+    }
+
+    .content .courses .item,
+    .content .articles .item{
+        width: 45%;
+    }
+
+    .content .courses .item .bottom .discount > h5{
+        width: 80%;
+    }
+
+    .content .comments .right .item{
+        width: 48%;
+    }
+
+    .content .podcasts .item .top,
+    .content .podcasts .item .bottom{
+        flex-direction: column;
+    }
+
+    .content .podcasts .item .top i{
+        text-align: center;
+        padding: 18px;
+    }
+
+    .content .podcasts .item .bottom{
+        text-align: center;
+    }
+
+    .content .articles .item .top img{
+        height: 220px;
+    }
+
+    footer{
+        padding: 60px 70px 30px;
+    }
+
+    footer .columns{
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    footer .columns .col,
+    footer .columns .col.last{
+        width: 45%;
+        flex: none;
+    }
+
+}
