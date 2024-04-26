@@ -252,3 +252,125 @@ header .pesquisar button {
     display: flex;
     gap: 10px;
 }
+
+.content .courses .item .bottom .discount > h5{
+    background-color: #b7e4c7;
+    color: #2d6a4f;
+}
+
+.content .courses .item .bottom .discount .time{
+    text-align: center;
+}
+
+.content .courses .item .bottom .discount .time p{
+    color: #888;
+    font-size: 12px;
+}
+
+.content .courses .item .bottom .discount .time h5{
+    font-size: 13px;
+}
+
+.content .comments{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 0 0 100px;
+}
+
+.content .comments > p{
+    width: 65%;
+    color: #2d6a4f;
+    font-size: 20px;
+}
+
+.content .comments .right{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 14px;
+}
+
+.content .comments .right .item{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #fff;
+    padding: 8px;
+    width: 32%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.content .comments .right .item img{
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.content .comments .right .item p{
+    font-size: 14px;
+}
+
+.content .podcasts .item .top i{
+    font-size: 40px;
+    background-color: #4361ee;
+    padding: 12px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.content .podcasts .item:nth-child(2) .top i{
+    background-color: #f72585;
+}
+
+.content .podcasts .item:nth-child(3) .top i{
+    background-color: #fb8500;
+}
+
+.content .podcasts .item .bottom .duration{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.content .podcasts .item .bottom .duration i{
+    font-size: 26px;
+    color: #2d6a4f;
+}
+
+.content .podcasts .item .bottom .duration p{
+    color: #2d6a4f;
+    font-size: 13px;
+}
+
+.content .podcasts .item .bottom h5{
+    background-color: #ede0d4;
+    color: #9c6644;
+}
+
+.content .articles{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.content .articles .item{
+    width: 23%;
+}
+
+.content .articles .item .top{
+    flex-direction: column;
+}
+
+.content .articles .item .top img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
