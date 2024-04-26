@@ -75,3 +75,39 @@ header {
     background-size: 30px 30px;
     background-position: 0 0, 15px 15px;
 }
+
+header .info h1 {
+    font-weight: 900;
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header .info p {
+    color: #666;
+    font-size: 18px;
+    margin-top: 14px;
+    font-weight: bold;
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header .buttons {
+    display: flex;
+    gap: 14px;
+    margin-top: 10px;
+}
+
+header .buttons button {
+    border: none;
+    padding: 8px;
+    width: 140px;
+    border-radius: 10px;
+    background-color: #777;
+    color: #fff;
+    cursor: pointer;
+}
+
+header .buttons button.see-all {
+    background-color: #2d6a4f;
+}
+
